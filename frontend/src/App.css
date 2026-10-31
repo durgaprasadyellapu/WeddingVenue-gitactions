@@ -1,0 +1,157 @@
+.app {
+  min-height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  padding: 65px 20px;
+  color: white;
+  background: linear-gradient(135deg, #392d43, #9c6687);
+}
+
+.hero h1 {
+  font-size: clamp(28px, 5vw, 42px);
+  margin: 12px 0;
+}
+
+.hero p {
+  color: #f5e8f0;
+}
+
+.subtitle {
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 35px auto;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px #382b3d12;
+}
+
+.card h2 {
+  color: #704775;
+  margin-top: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dfd2e1;
+  border-radius: 7px;
+  outline-color: #98659d;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px 18px;
+  background: #754b7c;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #57335e;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  border-bottom: 1px solid #eee4ed;
+  text-align: left;
+  padding: 12px;
+}
+
+th {
+  background: #f5edf5;
+  color: #69466e;
+}
+
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #f8f2f8;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.message {
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 8px;
+  overflow-wrap: anywhere;
+}
+
+.success {
+  background: #e7f6eb;
+  color: #246b3b;
+}
+
+.error {
+  background: #ffeded;
+  color: #a22d3b;
+}
+
+.empty {
+  color: #88788a;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 94%;
+  }
+
+  .heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
