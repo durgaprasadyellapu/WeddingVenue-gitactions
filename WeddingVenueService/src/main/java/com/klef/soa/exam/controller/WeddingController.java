@@ -17,7 +17,10 @@ import com.klef.soa.exam.service.WeddingVenueService;
 
 @RestController
 @RequestMapping("/wedding")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+    "http://localhost:3000",
+    "http://localhost:5173"
+})
 public class WeddingController {
 
     private final WeddingVenueService service;
